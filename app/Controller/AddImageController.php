@@ -66,7 +66,7 @@ public $uses = array();
                         //upload folder - make sure to create one in webroot
             $uploadFolder = "albums/images";
                         //full path to upload folder
-            $uploadPath = WWW_ROOT . $uploadFolder;
+            $uploadPath = WWW_ROOT.$uploadFolder;
 
 
                         //check if image type fits one of allowed types
@@ -80,19 +80,25 @@ public $uses = array();
                         if (file_exists($uploadPath . '/' . $imageName)) {
                                                     //create full filename with timestamp
                             $imageName = date('His') . $imageName;
+
                         }
                                     //create full path with image name
                         $full_image_path = $uploadPath . '/' . $imageName;
                                     //upload image to upload folder
                         if (move_uploaded_file($image['tmp_name'], $full_image_path)) {
-                            $this->Session->setFlash('File saved successfully');
-                            $this->set('imageName',$imageName);
+                            // $this->Session->setFlash('File saved successfully');
+                            // $this->set('imageName',$imageName);
+                            
+        $url="home.php?album=images";
+        $this->redirect('../'.$url, $status = null);
                         } else {
                             $this->Session->setFlash('There was a problem uploading file. Please try again.');
                         }
                     } else {
+
+
                         $this->Session->setFlash('Error uploading file.');
-                    }
+                    }        
                     break;
                 } else {
                     $this->Session->setFlash('Unacceptable file type');

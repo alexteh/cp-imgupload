@@ -23,16 +23,9 @@
 });	
 	</script>
 </head>
-<body>
-
-	<br />
-	<a href="addpic"> add image</a>
-	<br />
-
+<body><br><br>
+<center>
+	<a href="addpic"> add image</a></center>
 	<?php $_REQUEST['fullalbum']=1; include 'g.php'; ?>
-
-
-
-
 </body>
 </html>

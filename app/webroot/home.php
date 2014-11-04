@@ -1,3 +1,13 @@
+
+<?php 
+include 'core/init.php'; 
+logged_in_redirect();
+
+if(isset($_GET['album'])===false)
+{
+	header('Location: home.php?album=images');
+}
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -25,7 +35,10 @@
 </head>
 <body><br><br>
 <center>
-	<a href="addpic"> add image</a></center>
+	<a href="addpic"> Add Image</a> |
+	<a href="admin"> Login</a>
+
+</center>
 	<?php $_REQUEST['fullalbum']=1; include 'g.php'; ?>
 </body>
 </html>

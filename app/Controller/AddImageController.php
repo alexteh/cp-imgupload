@@ -54,6 +54,16 @@ public $uses = array();
  * @param mixed What page to display
  * @return void
  */
+
+
+
+public function back() {
+        //$this->set('posts', $this->Post->find('all'));
+        //header("Location: home.php?album=images");
+        $url="home.php?album=images";
+        $this->redirect('../'.$url, $status = null);
+    }
+
     public function display() 
     {
       if ($this->request->is('post')) 
@@ -88,7 +98,7 @@ public $uses = array();
                         if (move_uploaded_file($image['tmp_name'], $full_image_path)) {
                             // $this->Session->setFlash('File saved successfully');
                             // $this->set('imageName',$imageName);
-                            
+
         $url="home.php?album=images";
         $this->redirect('../'.$url, $status = null);
                         } else {

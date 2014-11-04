@@ -51,6 +51,13 @@ class PagesController extends AppController {
         $url="home.php?album=images";
         $this->redirect('../'.$url, $status = null);
     }
+
+    public function admin() {
+        //$this->set('posts', $this->Post->find('all'));
+        //header("Location: home.php?album=images");
+        $url="l.php";
+        $this->redirect('../'.$url, $status = null);
+    }
 	public function display() {
 		$path = func_get_args();
 

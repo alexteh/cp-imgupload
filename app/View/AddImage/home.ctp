@@ -15,7 +15,11 @@ echo $this->Session->flash();
         echo $this->Form->input('image', array('type' => 'file' , 'id' => 'add_image_input'));
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
+<?php 
+
+echo $this->Html->link('back', array('action' => 'back')); 
+
+echo $this->Form->end(__('Submit')); ?>
 
 </div>
 <script>

@@ -26,11 +26,11 @@
  */
 	
 //Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+
 Router::connect('/', array('controller' => 'pages', 'action' => 'index'));
+
+Router::connect('/admin', array('controller' => 'pages', 'action' => 'admin'));
 Router::connect('/posts', array('controller' => 'posts', 'action' => 'index'));
-
-
-
 Router::connect('/addpic/*', array('controller' => 'addimage', 'action' => 'display', 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.

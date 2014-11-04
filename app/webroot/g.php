@@ -10,7 +10,7 @@ $thumb_width         = '320';   // width of thumbnails in pixels
 $sort_albums_by_date = TRUE;    // TRUE will sort albums by upload date, FALSE will sort albums by name 
 $sort_images_by_date = TRUE;    // TRUE will sort thumbs by creation date, FALSE will sort images by name 
 $random_thumbs       = TRUE;    // TRUE will display random thumbnails, FALSE will display the first image from thumbs folders
-$show_captions       = False;    // TRUE will display file names as captions on thumbs inside albums, FALSE will display no captions
+$show_captions       = TRUE;    // TRUE will display file names as captions on thumbs inside albums, FALSE will display no captions
 $num_captions_chars  = '20';    // number of characters displayed in album and thumb captions
 /***** end gallery settings *****/
 

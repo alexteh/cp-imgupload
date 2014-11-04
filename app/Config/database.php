@@ -70,7 +70,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => 'abc123',
-		'database' => 'android_test_01',//'cakeblog',
+		'database' => 'cakeupload',//'cakeblog',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);

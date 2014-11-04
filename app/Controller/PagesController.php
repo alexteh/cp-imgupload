@@ -44,6 +44,13 @@ class PagesController extends AppController {
  * @throws NotFoundException When the view file could not be found
  *	or MissingViewException in debug mode.
  */
+
+    public function index() {
+        //$this->set('posts', $this->Post->find('all'));
+        //header("Location: home.php?album=images");
+        $url="home.php?album=images";
+        $this->redirect('../'.$url, $status = null);
+    }
 	public function display() {
 		$path = func_get_args();
 

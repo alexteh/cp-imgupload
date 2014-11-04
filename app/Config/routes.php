@@ -26,7 +26,10 @@
  */
 	
 //Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
-Router::connect('/', array('controller' => 'posts', 'action' => 'index'));
+Router::connect('/', array('controller' => 'pages', 'action' => 'index'));
+Router::connect('/posts', array('controller' => 'posts', 'action' => 'index'));
+
+
 
 Router::connect('/addpic/*', array('controller' => 'addimage', 'action' => 'display', 'home'));
 /**

@@ -26,7 +26,7 @@
 <body>
 
 	<br />
-	<a href="../../addimage/display"> add image</a>
+	<a href="addpic"> add image</a>
 	<br />
 
 	<?php $_REQUEST['fullalbum']=1; include 'g.php'; ?>

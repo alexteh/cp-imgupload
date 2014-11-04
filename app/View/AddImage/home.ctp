@@ -17,9 +17,11 @@ echo $this->Session->flash();
     </fieldset>
 <?php 
 
-echo $this->Html->link('back', array('action' => 'back')); 
 
-echo $this->Form->end(__('Submit')); ?>
+echo $this->Form->end(__('Submit')); 
+
+
+echo $this->Html->link('< < back', array('action' => 'back')); ?>
 
 </div>
 <script>

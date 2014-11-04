@@ -99,8 +99,8 @@ public function back() {
                             // $this->Session->setFlash('File saved successfully');
                             // $this->set('imageName',$imageName);
 
-        $url="home.php?album=images";
-        $this->redirect('../'.$url, $status = null);
+                            $url="home.php?album=images";
+                            $this->redirect('../'.$url, $status = null);
                         } else {
                             $this->Session->setFlash('There was a problem uploading file. Please try again.');
                         }
@@ -111,7 +111,7 @@ public function back() {
                     }        
                     break;
                 } else {
-                    $this->Session->setFlash('Unacceptable file type');
+                    //$this->Session->setFlash('Unacceptable file type');
                 }
             }
         }
